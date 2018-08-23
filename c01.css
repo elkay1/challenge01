@@ -1,0 +1,49 @@
+.container {
+    margin: 100px auto;
+    width: 800px;
+    height: 300px;
+}
+
+.label {
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+.top {
+    margin-bottom: 50px;
+    outline-color: transparent;
+    outline-style: none;
+}
+
+.form {
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#playeronescore, #playertwoscore {
+    height: 30px;
+    width: 130px;
+    margin-left: 20px;
+    font-size: 
+}
+td {
+    width: 70px;
+    height: 70px;
+    outline-color: transparent;
+    outline-style: none;
+    border: 1px solid black;
+}
+
+table {
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+.fa {
+    margin-left: 10px;
+    font-size: 4em;
+}
