@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Air Defence</title>
@@ -8,40 +9,47 @@
     <link type="text/css" rel="stylesheet" href="c01.css">
 
 </head>
+
 <body>
 
-<div class="container">
-    <h1>Air Defence</h1>
-    <div class="form">
-        <div class="ui input top">
-            <p class="label">Player's Name:</p>
-            <input class="inputs" type="text" placeholder="Player 1" id="playerOneName">
-            <div id="playerone"></div>
-            <div id="playerOneScore"></div>
-            <div id="aiScore"></div>
-            <div id="tdRolled"></div>
+    <div class="container">
+        <h1>Air Defence</h1>
+        <div class="form">
+            <div class="ui input top">
+                <p class="label">Player's Name:</p>
+                <input class="inputs" type="text" placeholder="Player 1" id="playerOneName">
+                <p class="label" id="numberofturns">Number of turns:</p>
+                <input class="inputs" type="number" placeholder="Number of turns" id="NoTurns">
+
+            </div>
         </div>
-    </div>
-    <div id="turn"></div>
-    <div class="buttons">
-        <button class="ui blue button" id="startGame">
+                <div class="scores">
+                    <div id="playerone"></div>
+                    <div id="playerOneScore"></div>
+                    <div id="aiScore"></div>
+                </div>
+                <div id="tdRolled"></div>
+        <div id="turn"></div>
+        <div class="buttons">
+            <button class="ui blue button" id="startGame">
               Start Game
         </button>
-        <button class="ui green button" id="restartGame">
+            <button class="ui green button" id="restartGame">
               Clear Board
         </button>
-        <button class="ui red button" id="fightMe">
+            <button class="ui red button" id="fightMe">
               Fight Me
         </button>
+        </div>
+        <div class="board"></div>
     </div>
-    <div class="board"></div>
-</div>  
-    
-    
 
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="c01.js"></script>
-    
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="c01.js"></script>
+
 </body>
+
 </html>
