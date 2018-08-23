@@ -24,7 +24,7 @@
     margin-top: 50px;
 }
 
-#playeronescore, #playertwoscore {
+#playerone, #aiScore {
     height: 30px;
     width: 130px;
     margin-left: 20px;
@@ -47,3 +47,4 @@ table {
     margin-left: 10px;
     font-size: 4em;
 }
+

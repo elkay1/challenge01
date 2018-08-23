@@ -1,15 +1,23 @@
+var X = "<div class='cross1'></div><div class='cross2'></div>";
+let playerOne = $("#playerOneName").val();
+
+$(document).ready(function(){
+$("#startGame").on("click", function(){
+   DrawBoard(); 
+});
 
 
+
+
+
+});
 function DrawBoard(){
-var playerOne = $("#playerOneName").val();
-var playerTwo = $("#playerTwoName").val();
-    let mytable = "<table class='mytable'><tbody>";
+let mytable = "<table class='mytable'><tbody>";
 
 
-    $("#playeronescore").html("<p>" + playerOne + "'s Score: </p>");
+    $("#playerone").html("<p>" + playerOne + "'s Score: </p>");
     console.log(playerOne);
-    $("#playertwoscore").html("<p>" + playerTwo + "'s Score: </p>");
-    console.log(playerTwo);
+    $("#aiScore").html("<p> AI's Score: </p>");
 
     for (var i = 1; i < 11; i++) {
         mytable += "<tr>";

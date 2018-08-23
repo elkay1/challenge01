@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Air Defence</title>
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.css">
     <link type="text/css" rel="stylesheet" href="c01.css">
@@ -10,34 +10,33 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="timer"></div>
-           <div class="form">
-            <div class="ui input top">
-                <p class="label">Player 1 Name:</p>
-                <input class="inputs" type="text" placeholder="Player 1" id="playerOneName">
-                <div id="playeronescore"></div>
-                <div id="scoreone"></div>
+<div class="container">
+    <div class="timer"></div>
+    <div class="form">
+        <div class="ui input top">
+            <p class="label">Player's Name:</p>
+            <input class="inputs" type="text" placeholder="Player 1" id="playerOneName">
+            <div id="playerone"></div>
+            <div id="playerOneScore"></div>
+            <div id="aiScore"></div>
+            <div id="coords"></div>
 
-            </div>
-            <div class="ui input bottom">
-                <p class="label">Player 2 Name:</p>
-                <input class="inputs" type="text" placeholder="Player 2" id="playerTwoName">
-                <div id="playertwoscore"></div>
-                <div id="scoretwo"></div>
-            </div>
         </div>
-        <div id="turn"></div>
-        <div class="buttons">
-            <button class="ui blue button" id="startGame" onclick="DrawBoard()">
+    </div>
+    <div id="turn"></div>
+    <div class="buttons">
+        <button class="ui blue button" id="startGame">
               Start Game
         </button>
-            <button class="ui green button" id="restartGame">
-              Restart Game
+        <button class="ui green button" id="restartGame">
+              Clear Board
         </button>
-        </div>
-        <div class="board"></div>
-    </div>   
+        <button class="ui red button" id="fightMe">
+              Fight Me
+        </button>
+    </div>
+    <div class="board"></div>
+</div>  
     
     
 
